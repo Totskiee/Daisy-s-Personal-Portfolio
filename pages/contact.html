@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+  <a href="../index.html" class="logo">Daisy The VA.</a>
+  <input type="checkbox" class="menu-toggle" id="menu-toggle">
+  <label for="menu-toggle" class="menu-btn">☰</label>
+
+  <nav class="navbar">
+    <a href="../index.html" class="active">Home</a>
+    <a href="../pages/about.html">About</a>
+    <a href="../pages/testimonial.html">Testimonial</a>
+    <a href="../pages/contact.html">Contact</a>
+  </nav>
+</header>
+
+
+<main>
+    <section class="contact-section">
+        <div class="contact-container">
+
+          <h2>Contact Me</h2>
+          <p>I'd love to hear from you! Whether you have questions, feedback, or need some help, feel free to reach out.</p>
+
+          <form action="https://api.web3forms.com/submit" method="POST">
+          <div class="contact-form">
+            <input type="hidden" name="access_key" value="c2b78e9b-9fdc-4035-927c-25eefdc82962">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="primary-button">Send Message</button>
+          </div>
+        </div>
+    </form>
+      </section>
+
+</main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Me</h3>
+                <p><i class="fas fa-envelope"></i> theysayflower03@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 09329031580</p>
+                <p><i class="fas fa-map-marker-alt"></i> Cebu, Philippines</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/testimonial.html">Testimonial</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Me</h3>
+                <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/daisy-jao-42438b1b1/"><i class='bx bxl-linkedin' ></i></a></li>
+                <li><a href="https://www.facebook.com/lifewithdaisyph"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="https://www.instagram.com/daisytheva/"><i class='bx bxl-instagram-alt' ></i></a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2025 Daisy The VA. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="../assets/js/resume.js"></script>
+<script src="../assets/js/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+footer {
+    font-family: "Rubik", sans-serif;
+    padding-top: 50px;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 50%;
+}
+
+footer h3 {
+    color: black;
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-content p {
+    color: black;
+    font-size: 18px;
+    width: 250px;
+    margin: auto;
+    padding: 7px;
+    display: flex;             
+    align-items: center;      
+    gap: 8px;                  
+}
+
+
+.footer-content i {
+    width: 20px;
+}
+
+.footer-content ul {
+    text-align: center;
+}
+
+.list {
+    padding: 0;
+}
+
+.list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+    text-decoration: none;
+}
+
+.list li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition-duration: .5s;
+}
+
+.list li:hover::before {
+    width: 70px;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i {
+    color: gray;
+    font-size: 25px;
+}
+
+footer a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: black;
+}
+
+.social-icons i:hover {
+    color: black;
+}
+
+.bottom-bar {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.bottom-bar p {
+    font-size: 18px;
+    color: black;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .footer-content p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .list li::before {
+    width: 0; 
+  }
+
+  .social-icons li {
+    padding: 8px;
+  }
+
+  .social-icons i {
+    font-size: 22px;
+  }
+
+  .bottom-bar {
+    margin-top: 30px;
+    padding: 10px 0;
+  }
+
+  .bottom-bar p {
+    font-size: 16px;
+  }
+}

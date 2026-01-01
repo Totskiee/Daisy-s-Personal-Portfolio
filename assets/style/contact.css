@@ -1,0 +1,115 @@
+
+.contact-section {
+    padding: 30px 15px;
+    font-size: 18px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+} 
+.contact-container h2 {
+    color: #333232;
+    margin-bottom: 10px;
+}
+.contact-container p {
+    font-size: 1.1em;
+    color: #363434;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+} 
+.contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #5a5757;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.contact-form button,
+.contact-form input[type="submit"] {
+  padding: 12px 24px;
+  font-size: 1.1em;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.contact-form button:hover,
+.contact-form input[type="submit"]:hover {
+  background-color: #000000;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 20px 10px;
+  }
+
+  .contact-container {
+    padding: 0 10px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.5em;
+  }
+
+  .contact-container p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    gap: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95em;
+    padding: 10px;
+  }
+
+  .contact-form button,
+  .contact-form input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container h2 {
+    font-size: 1.2em;
+  }
+
+  .contact-container p {
+    font-size: 0.9em;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  .contact-form button,
+  .contact-form input[type="submit"] {
+    font-size: 0.95em;
+    padding: 8px 18px;
+  }
+}

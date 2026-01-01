@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- Your Styles -->
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ✅ Swiper CSS (correct place) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+<header class="header">
+  <a href="./index.html" class="logo">Daisy The VA.</a>
+  <input type="checkbox" class="menu-toggle" id="menu-toggle">
+  <label for="menu-toggle" class="menu-btn">☰</label>
+
+  <nav class="navbar">
+    <a href="../index.html" class="active">Home</a>
+    <a href="../pages/about.html">About</a>
+    <a href="../pages/testimonial.html">Testimonial</a>
+    <a href="../pages/contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero-about">
+
+  <div class="hero-container">
+
+    <!-- LEFT SIDE -->
+    <div class="hero-left">
+      <img src="../assets/image/profile2.jpeg" alt="Daisy profile" class="hero-photo">
+
+      <h1>Daisy Jao</h1>
+      <h3>Real Estate Virtual Assistant</h3>
+
+      <p>
+        Hi, I’m Daisy — a reliable real estate virtual assistant helping
+        agents save time, stay organized, and close more deals.
+      </p>
+      <button class="primary-btn" id="resumeBtn">Resume</button>
+      <div id="resumeModal" class="resume-modal">
+  <div class="resume-box">
+
+    <h2>My Resume</h2>
+
+    <div class="resume-actions">
+      <a href="../assets/Daisy Resume2025 (1).pdf" target="_blank" class="resume-btn view">
+        👁 View Resume
+      </a>
+
+      <a href="../assets/Daisy Resume2025 (1).pdf" download class="resume-btn download">
+        ⬇ Download Resume
+      </a>
+
+      <button id="cancelBtn" class="resume-btn exit">
+        ❌ Exit
+      </button>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+    
+
+    <!-- RIGHT SIDE -->
+    <div class="hero-right">
+
+      <!-- VIDEO -->
+      <video
+        id="introVideo"
+        class="hero-video"
+        poster="../assets/image/thumbnail.jpeg"
+      >
+        <source src="../assets/image/Video Introduction.mp4" type="video/mp4">
+      </video>
+
+      <div class="media-buttons">
+        <button id="videoToggle" class="media-btn">▶ Video Intro</button>
+        <button id="voiceToggle" class="media-btn">🔊 Voice Intro</button>
+      </div>
+
+      <audio id="voiceAudio">
+        <source src="../assets/image/Voice Introduction.mp3" type="audio/mpeg">
+      </audio>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Ready to work together?</h2>
+  <a href="../pages/contact.html" class="cta-btn">Book a Discovery Call</a>
+</section>
+
+
+
+  <!-- Certificates Section -->
+  <div id="certificatesSection" class="certificates">
+      <h2>My Certificates</h2>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../assets/image/Facebook Ads Certificate.png"></div>
+          <div class="swiper-slide"><img src="../assets/image/Social Media Management Certificate.png"></div>
+          <div class="swiper-slide"><img src="../assets/image/Virtual Assistant Certificate.png"></div>
+          <div class="swiper-slide"><img src="../assets/image/WordPress Certificate.png"></div>
+          <div class="swiper-slide"><img src="../assets/image/leadgen cert.png"></div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+  </div>
+
+  <section class="tools-section">
+    <h2>Tools I Use</h2>
+    <div class="tool-img">
+      <img src="../assets/image/mytools.jpeg" alt="Tools I Use">
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <h3>Contact Me</h3>
+      <p><i class="fas fa-envelope"></i> theysayflower03@gmail.com</p>
+      <p><i class="fas fa-phone"></i> 09329031580</p>
+      <p><i class="fas fa-map-marker-alt"></i> Cebu, Philippines</p>
+    </div>
+
+    <div class="footer-content">
+      <h3>Quick Links</h3>
+      <ul class="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/about.html">About</a></li>
+        <li><a href="../pages/testimonial.html">Testimonial</a></li>
+        <li><a href="../pages/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-content">
+      <h3>Follow Me</h3>
+      <ul class="social-icons">
+        <li><a href="https://www.linkedin.com/in/daisy-jao-42438b1b1/"><i class="bx bxl-linkedin"></i></a></li>
+        <li><a href="https://www.facebook.com/lifewithdaisyph"><i class="bx bxl-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/daisytheva/"><i class="bx bxl-instagram-alt"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <p>&copy; 2025 Daisy The VA. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ✅ Swiper JS (must load BEFORE certificate.js) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Your JS Files -->
+<script src="../assets/js/resume.js"></script>
+<script src="../assets/js/header.js"></script>
+<script src="../assets/js/certificate.js"></script>
+<script src="../assets/js/media.js"></script>
+
+</body>
+</html>
